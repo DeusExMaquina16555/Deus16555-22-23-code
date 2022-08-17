@@ -48,7 +48,7 @@ public class autonomousencoder extends LinearOpMode {
   }
 
   /**
-   * Describe this function...
+   * This function uses encoders to control the back wheels. Changing a wheel's value to a larger number means it will move farther
    */
   private void MoveRobot(double LeftDistance, double RightDistance) {
     LMotor.setMode(DcMotor.RunMode.STOP_AND_RESET_ENCODER);
@@ -69,7 +69,7 @@ public class autonomousencoder extends LinearOpMode {
   }
 
   /**
-   * Describe this function...
+   * This function is used to control the positon of the arm and claw
    */
   private void GrabObject(double RClaw2, double LClaw2, double Arm_Position) {
     LClaw.setPosition(LClaw2);
